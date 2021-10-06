@@ -45,7 +45,7 @@ list.style.top = `300px`
 
 // отслеживание изменения местоположения розового блока
 const mutationObserver = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
+    mutations.forEach((mutation) => {
         list.style.top = mutation.target.style.top
         list.style.left = mutation.target.style.left
         list.style.transform = `translateX(${mutation.target.style.width})`
